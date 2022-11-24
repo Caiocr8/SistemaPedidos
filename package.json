@@ -1,0 +1,27 @@
+{
+  "name": "sistemapedidos",
+  "version": "0.0.1",
+  "description": "Sistema de pedidos feito na stack JEMN",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caiocr8/SistemaPedidos.git"
+  },
+  "author": "Caio Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caiocr8/SistemaPedidos/issues"
+  },
+  "homepage": "https://github.com/Caiocr8/SistemaPedidos#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "localtoken": "^0.1.2",
+    "nodemon": "^2.0.20",
+    "simple-mongoose-creator": "^0.0.1"
+  }
+}
