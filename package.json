@@ -21,6 +21,7 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
     "localtoken": "^0.1.2",
+    "mongoose": "^7.0.0",
     "nodemon": "^2.0.20",
     "simple-mongoose-creator": "^0.0.1"
   }

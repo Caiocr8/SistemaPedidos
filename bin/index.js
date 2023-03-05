@@ -34,7 +34,7 @@ app.use(
 
 // Chamando rotas
 app.use('/', (req, res) => {
-    return res.send('Você pensa que o flamengo é time?')
+    return res.render('login')
 });
 
 
