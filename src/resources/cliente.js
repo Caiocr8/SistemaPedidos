@@ -31,6 +31,12 @@ class Cliente {
         return await modelo.findOneAndDelete(id);
     }
 
+    static async validarRegistro(dados) {
+        let { email } = dados;
+        let cliente = await modelo.findOne({ email });
+        return cliente;
+    }
+
 }
 
 module.exports = Cliente;

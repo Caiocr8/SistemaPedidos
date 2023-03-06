@@ -5,6 +5,11 @@ smc.smc('clientes', {
         required: true,
         trim: true
     },
+    email: {
+        type: String,
+        required: true,
+        trim: true
+    },
     telefone: {
         type: String,
         required: true
