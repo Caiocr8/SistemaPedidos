@@ -32,12 +32,14 @@ app.use(
 );
 
 const cliente_route = require('../src/routes/cliente');
+const funcionario_route = require('../src/routes/funcionario');
 app.use('/cliente', cliente_route);
+app.use('/funcionario', funcionario_route);
 
 
 // Chamando rotas
 app.use('/', (req, res) => {
-    return res.render('login')
+    return res.send('BEM VIND@!')
 });
 
 

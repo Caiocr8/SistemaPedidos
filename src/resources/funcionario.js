@@ -16,12 +16,6 @@ class Funcionario {
         return await new modelo(dados).save();
     }
 
-    static async autenticar(dados) {
-        const { matricula } = dados;
-        const funcionario = await modelo.findOne({matricula});
-        return funcionario;
-    }
-
     static async buscarTodos() {
         return await modelo.find({});
     }
@@ -42,6 +36,12 @@ class Funcionario {
 
     static async deletar(id) {
         return await modelo.findOneAndDelete(id);
+    }
+
+    static async validarRegistro(dados) {
+        let { matricula } = dados;
+        let funcionario = await modelo.findOne({matricula});
+        return funcionario;
     }
 
 }

@@ -5,6 +5,11 @@ smc.smc('funcionarios', {
         required: true,
         unique: true
     },
+    nome: {
+        type: String,
+        required: true,
+        trim: true
+    },
     senha: {
         type: String,
         required: true,

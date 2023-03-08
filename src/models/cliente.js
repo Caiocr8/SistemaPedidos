@@ -13,6 +13,10 @@ smc.smc('clientes', {
     telefone: {
         type: String,
         required: true
+    },
+    cpf: {
+        type: String,
+        required: false // não é obrigatorio
     }
 });
 
